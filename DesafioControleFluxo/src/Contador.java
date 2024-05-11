@@ -3,14 +3,16 @@ import java.util.Scanner;
 
 public class Contador {
     public static void main(String[] args) throws Exception {
+        //comando para receber dois parametros
         Scanner terminal = new Scanner(System.in);
 
-        System.out.println("Digite um numero");
+        System.out.println("Digite um Parâmetro");
         int parametroUm = terminal.nextInt();
 
-        System.out.println("Digite outro numero");
+        System.out.println("Digite outro Parâmetro");
         int parametroDois = terminal.nextInt();
 
+        // exceção de erro
         try {
 
             System.out.println("******* Controle de Fluxo *****************");
@@ -33,6 +35,8 @@ public class Contador {
         
     }
 
+
+    // funcao com interação for
     static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException{
 
         if(parametroUm < parametroDois){
